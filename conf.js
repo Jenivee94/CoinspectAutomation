@@ -6,7 +6,7 @@ exports.config = {
     // 'properties_spec.js',
     //  'usergroup_spec.js',
      'users_spec.js',
-      'checklist_spec.js',
+      'checklist_spec.js'
 
   ],
   jasmineNodeOpts: {
@@ -22,4 +22,8 @@ exports.config = {
       'maxInstances': 1
     },
   };
+<<<<<<< HEAD
 QATestingRepository
+=======
+ QATestingRepository
+>>>>>>> newconf
