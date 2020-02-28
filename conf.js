@@ -3,10 +3,12 @@ exports.config = {
     framework: 'jasmine',
     specs: [
       // 'spec.js',
-    // 'properties_spec.js',
-    //  'usergroup_spec.js',
-     'users_spec.js',
-      'checklist_spec.js'
+      // 'properties_spec.js',
+      //  'usergroup_spec.js',
+      //  'users_spec.js',
+      //   'checklist_spec.js',
+      'myaccount_spec.js'
+      
 
   ],
   jasmineNodeOpts: {

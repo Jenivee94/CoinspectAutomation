@@ -5,7 +5,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 });
 
 
-    it('should logged in', function() {
+    it('should logged in', function loginTest () {
         var username = $('[name="email"]');
         username.sendKeys('ojt_admin');
         browser.sleep(500);
@@ -20,14 +20,14 @@ browser.get('https://testing.stg.coinspectapp.com/');
         browser.sleep(800);
     });
 
-    it('should open the my account tab',function(){
+    it('should open the my account tab',function myAccountTabTest(){
         var account = element(by.css('.ico.i-myaccount'));
         account.click();
         browser.sleep(800);
     });
 
 
-    it('Should not show retype email when email format is incorrect', function(){
+    it('should not show retype email when email format is incorrect', function AccountEmailTesting (){
         var loginBtn = element(by.css('[ng-click="view = \'email\'"]'));
         loginBtn.click();
         browser.sleep(500);
@@ -42,7 +42,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('Should not show type current passsword when emails do not match', function(){
+    it('should not show type current passsword when emails do not match', function AccountEmailTesting (){
         var loginBtn = element(by.css('[ng-click="view = \'email\'"]'));
         loginBtn.click();
         browser.sleep(500);
@@ -62,7 +62,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('Should show validation error when password mistyped for email', function(){
+    it('should show validation error when password mistyped for email', function AccountEmailTesting(){
         var loginBtn = element(by.css('[ng-click="view = \'email\'"]'));
         loginBtn.click();
         browser.sleep(500);
@@ -87,7 +87,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('should be able to change the email', function(){
+    it('should be able to change the email', function AccountEmailTesting(){
         var loginBtn = element(by.css('[ng-click="view = \'email\'"]'));
         loginBtn.click();
         browser.sleep(500);
@@ -113,7 +113,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('Should not show type current password when usernames do not match ',function(){
+    it('should not show type current password when usernames do not match ',function AccountUsernameTesting (){
         
         var usernameBtn = element(by.css('[ng-click="view = \'username\'"]'));
         usernameBtn.click();
@@ -132,7 +132,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
         browser.sleep(5000);
     });
 
-    it('Should show validation error when password mistyped for user name',function(){
+    it('should show validation error when password mistyped for user name',function AccountEmailTesting(){
         
         var usernameBtn = element(by.css('[ng-click="view = \'username\'"]'));
         usernameBtn.click();
@@ -159,7 +159,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
     });
 
 
-    it('should be able to change the username',function(){
+    it('should be able to change the username',function AccountUsernameTesting (){
         
         var usernameBtn = element(by.css('[ng-click="view = \'username\'"]'));
         usernameBtn.click();
@@ -185,7 +185,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
         browser.sleep(500);
     });
 
-    it('Should not be able to change password using the current password',function(){
+    it('should not be able to change password using the current password',function AccountPasswordTesting(){
         var passwordBtn = element(by.css('[ng-click="view = \'password\'"]'));
         passwordBtn.click();
         browser.sleep(500);
@@ -208,7 +208,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('Should show validation error when passwords do not match',function(){
+    it('should show validation error when passwords do not match',function AccountPasswordTesting (){
         var passwordBtn = element(by.css('[ng-click="view = \'password\'"]'));
         passwordBtn.click();
         browser.sleep(500);
@@ -234,7 +234,7 @@ browser.get('https://testing.stg.coinspectapp.com/');
 
     });
 
-    it('should be able to change password',function(){
+    it('should be able to change password',function AccountPasswordTesting(){
         var passwordBtn = element(by.css('[ng-click="view = \'password\'"]'));
         passwordBtn.click();
         browser.sleep(500);
