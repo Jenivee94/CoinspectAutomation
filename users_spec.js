@@ -9,9 +9,14 @@ describe('Protractor Demo App', function() {
       const uname = $("[name='email']")
       uname.sendKeys("barbtest")
       const pword = $("[name='password']")
+<<<<<<< HEAD
       pword.sendKeys("Password1!!")
       $("[type='submit']").click();
       browser.sleep(500);
+=======
+      pword.sendKeys("Password1!")
+      $("[type='submit']").click();
+>>>>>>> first commit
       expect($(".success").isDisplayed("Results")).toBe(true);
   });
  it('should open the Users', () => {
