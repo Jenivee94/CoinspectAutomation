@@ -22,8 +22,3 @@ exports.config = {
       'maxInstances': 1
     },
   };
-<<<<<<< HEAD
-QATestingRepository
-=======
- QATestingRepository
->>>>>>> newconf
